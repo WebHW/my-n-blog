@@ -3,9 +3,8 @@ module.exports = function (app) {
     res.redirect('/posts')
   })
   app.use('/posts', require('./posts'))
-  app.use('/singup', require('./singup'))
-  app.use('/singin', require('./singin'))
-  app.use('/singout', require('./singout'))
-  console.log(1)
+  app.use('/signup', require('./signup'))
+  app.use('/signin', require('./signin'))
+  app.use('/signout', require('./signout'))
   app.use('/comments', require('./comments'))
 }
